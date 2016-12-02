@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from blog import views
+from blog.views import index, login, login_ok, logout, student
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/$', views.index),
+    url(r'^index/$', index),
+    url(r'^login/$', login),
+    url(r'^login_ok/$', login_ok),
+    url(r'^logout/$', logout),
+    url(r'^accounts/login/$', index),
+    url(r'^student/$', student)
 ]

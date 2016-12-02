@@ -5,5 +5,11 @@
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
     </data-source>
+    <data-source name="MySQL - myweb@localhost" uuid="5c9ef147-c2e1-4e1b-b001-451ed6e7a1c1">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>myweb:</introspection-scope>
+      <resolve-scope>myweb:</resolve-scope>
+    </data-source>
   </component>
 </project>

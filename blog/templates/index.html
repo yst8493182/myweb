@@ -1,10 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
+    <h2>login</h2>
+    <form method="post" action="/login/">
+        <input name="username" type="text" placeholder="username">
+        <input name="password" type="text" placeholder="password">
+        <button id="btn" type="submit">login</button>
+        <br>{{ error }}
+    </form>
+
+
+
     {% for blog in blogs %}
         <h2>{{ blog.title }}</h2>
         <p>{{ blog.timestamp }}</p>
         <p>{{ blog.body }}</p>
     {% endfor %}
+
+
+
+
 {% endblock %}
+
+
 
 

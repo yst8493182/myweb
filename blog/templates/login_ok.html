@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>嘿！{{ user }}</h2>
+    <a href="/logout/">退出</a>
+    {% for blog in blogs %}
+        <h2>{{ blog.title }}</h2>
+        <p>{{ blog.timestamp }}</p>
+        <p>{{ blog.body }}</p>
+    {% endfor %}
+{% endblock %}
